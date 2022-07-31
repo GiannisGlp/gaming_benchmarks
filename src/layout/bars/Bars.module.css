@@ -1,0 +1,115 @@
+:root {
+  --comp-width: 18rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 1rem 0 1rem 0;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  width: var(--comp-width);
+  text-align: center;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.subTitle {
+  font-size: 10px;
+  /* font-weight: 100; */
+}
+
+.barsWithTriangle {
+  display: flex;
+  flex-direction: column;
+  width: var(--comp-width);
+}
+
+.barsWrapper {
+  width: var(--comp-width);
+  display: flex;
+  height: 10rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bars {
+  width: 4rem;
+  height: 1rem;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bar1 {
+  height: 2rem;
+}
+.bar2 {
+  height: 4rem;
+}
+.bar3 {
+  height: 6rem;
+}
+.bar4 {
+  height: 8rem;
+}
+
+.barsRed {
+  background-color: rgba(180, 0, 0, 1);
+}
+.barsOrange {
+  background-color: orange;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.6rem 0.6rem 0 0.6rem;
+  border-color: white transparent transparent transparent;
+  align-self: center;
+  margin-bottom: -9.5px;
+}
+
+.triangleRed {
+  border-color: rgba(180, 0, 0, 1) transparent transparent transparent;
+}
+
+.triangleOrange {
+  border-color: orange transparent transparent transparent;
+}
+
+.barsTitle {
+  font-size: 8px;
+  margin: 4px 0 4px 8px;
+  font-weight: 500;
+}
+.whiteColor {
+  color: white;
+}
+
+.barsFooter {
+  width: var(--comp-width);
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: start;
+  margin: 10px 0;
+}
+.barsFooterTitle {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.rSymbol {
+  font-size: 8px;
+  position: absolute;
+}
+.pcTen {
+  color: rgba(180, 0, 0, 1);
+  margin-left: 3px;
+}

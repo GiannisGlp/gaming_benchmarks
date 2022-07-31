@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 1rem;
+}
+.hexagonFillWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+}
+.hexagonBorderWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.fpsTitleWrapper {
+  width: 15rem;
+  text-align: center;
+}
+.dropdown {
+  width: 90%;
+}
+
+.barsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.fpsScore {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .barsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

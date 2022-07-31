@@ -1,0 +1,81 @@
+.hexagonContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hexagon {
+  position: relative;
+  margin: 2rem 2rem 2rem 2rem;
+  width: 114px;
+  height: 65px;
+  background-color: rgba(180, 0, 0, 1);
+  background-position: center center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Text styling */
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+  z-index: -1;
+  /* Keeps borders smooth in webkit */
+  backface-visibility: hidden;
+}
+
+.hexagon .face1 {
+  transform: rotate(60deg);
+}
+
+.hexagon .face2 {
+  transform: rotate(-60deg);
+}
+
+.withBorders {
+  border-left: 2px solid rgba(180, 0, 0, 1);
+  border-right: 2px solid rgba(180, 0, 0, 1);
+  background-color: whitesmoke;
+}
+.hexagonBorders {
+  height: 24.5px;
+  width: 46px;
+  color: rgba(180, 0, 0, 1);
+  line-height: 1rem;
+}
+.fpsTitleLarge {
+  font-size: 14px;
+}
+.fpsTitleSmall {
+  font-size: 8px;
+}
+.fpsCounterSmall {
+  font-size: 10px;
+}
+.fpsCounterLarge {
+  font-size: 20px;
+}
+.fpsSub {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.fpsSubMargin {
+  margin-top: -14px;
+}

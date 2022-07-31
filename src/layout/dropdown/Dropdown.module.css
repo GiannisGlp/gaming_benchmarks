@@ -1,0 +1,141 @@
+:root {
+  --comp-width: 35rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dropdown {
+  width: 70%;
+  text-align: center;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  margin: 1rem 0 1rem 0;
+}
+.titleWrapper {
+  width: var(--comp-width);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionWrapper {
+  position: absolute;
+  margin-top: -1.1rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: var(--comp-width);
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 0rem;
+  width: 60%;
+}
+.optionWrapper::-webkit-scrollbar {
+  display: none;
+}
+.withHeight {
+  animation-name: giveHeight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  height: 10rem;
+}
+
+.contentWrapper {
+  height: 20rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+}
+.contentWrapper:hover {
+  background-color: whitesmoke;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.chooseTitle {
+  font-size: 1rem;
+  overflow-x: hidden;
+  inline-size: 25rem;
+  word-wrap: break-word;
+}
+.selectTitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.optionContent {
+  font-size: 1rem;
+}
+
+.cicle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(236, 236, 236, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+}
+.cicle:hover {
+  background-color: rgba(236, 236, 236, 1);
+}
+.cicle:disabled:hover {
+  background-color: rgba(236, 236, 236, 0.6);
+}
+
+.selectContent {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  padding-inline: 10px;
+  border-radius: 0.6rem;
+}
+.selectContent:hover {
+  background-color: rgba(236, 236, 236, 0.6);
+}
+
+@keyframes giveHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    width: 20rem;
+  }
+  .contentWrapper {
+    width: 20rem;
+  }
+  .optionWrapper {
+    width: 20rem;
+  }
+  .chooseTitle {
+    inline-size: 20rem;
+  }
+}
